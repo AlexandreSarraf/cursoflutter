@@ -1,25 +1,28 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const PerguntaApp());
+  runApp( PerguntaApp());
 }
 
 class PerguntaApp extends StatelessWidget {
-  const PerguntaApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Perguntas'),
+        ),
+        body: Column(
+          children: <Widget>[
+            Text('Linha 1')
+          ],
+        ),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
-
+/*
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -67,3 +70,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+*/
