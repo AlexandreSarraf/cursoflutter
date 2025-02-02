@@ -4,7 +4,7 @@ import './questao.dart';
 main() => runApp(const PerguntaApp());
 
 
-class _PerguntaAppState extends State<PerguntaApp> {
+class PerguntaAppState extends State<PerguntaApp> {
   
   var _perguntaSelecionada = 0;
 
@@ -46,7 +46,7 @@ class PerguntaApp extends StatefulWidget{
   const PerguntaApp({super.key});
 
   @override
-  _PerguntaAppState createState() {
-    return _PerguntaAppState();
+  PerguntaAppState createState() {
+    return PerguntaAppState();
   }
 }
