@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 
 class Resposta extends StatelessWidget {
-  const Resposta({super.key});
+  final String texto;
+
+  Resposta(this.texto);
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return ElevatedButton(
+      onPressed: null,
+      child: Text(texto),
+    );
   }
 }
