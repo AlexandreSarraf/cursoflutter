@@ -30,6 +30,10 @@ class PerguntaAppState extends State<PerguntaApp> {
       },
     ];
 
+    for (var textoResp in perguntas[_perguntaSelecionada]['respostas']) {
+      print(textoResp);
+    }
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
