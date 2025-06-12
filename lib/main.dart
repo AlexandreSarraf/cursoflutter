@@ -27,7 +27,7 @@ class PerguntaAppState extends State<PerguntaApp> {
       {
         'texto': 'Qual é o seu instrutor favorito?',
         'respostas': ['Maria', 'João', 'Leo', 'Pedro'],
-      }
+      },
     ];
 
     return MaterialApp(
@@ -37,10 +37,10 @@ class PerguntaAppState extends State<PerguntaApp> {
         ),
         body: Column(
           children: <Widget>[
-            Questao(perguntas[_perguntaSelecionada]),
-            const Resposta('Resposta 1', _responder),
-            const Resposta('Resposta 2', _responder),
-            const Resposta('Resposta 3', _responder),
+            Questao(perguntas[_perguntaSelecionada]['texto']),
+            Resposta('Resposta 1', _responder),
+            Resposta('Resposta 2', _responder),
+            Resposta('Resposta 3', _responder),
           ],
         ),
       ),
